@@ -1,0 +1,125 @@
+body {
+	text-align: center;
+	min-width: 600px;
+}
+
+#container {
+	position:relative;
+	width:900px;
+	margin-left: auto; margin-right:auto;
+/*	border: 1px dashed black;*/
+}
+#col1wrap {
+	width:400px; height:400px;
+	position:absolute;
+	left:200px; top:100px;
+}
+
+/*central zone*/
+#col1 {
+	width:400px; height:400px;
+	background: url('../images/stratinnov.png');
+	position: relative;
+/*	border: 1px dashed blue;*/
+	z-index:99;
+	cursor:pointer;
+}
+#col1 h1 {
+	font-family: Verdana, Helvetica, Tahoma, sans-serif;
+	font-size: 4em; line-height: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+#col1 .extraBig {
+	font-size: 6em;
+	
+}
+
+/*hover zones*/
+#col1a{
+	width:200px;height:200px;
+	position:absolute;
+	left:0; top: 0;
+	z-index:100;
+}
+#col1b{
+	width:200px;height:200px;
+	position:absolute;
+	right:0; top: 0;
+	z-index:101;
+}
+#col1c{
+	width:200px;height:200px;
+	position:absolute;
+	left:0; bottom: 0;
+	z-index:102;
+}
+#col1d{
+	width:200px;height:200px;
+	position:absolute;
+	right:0; bottom: 0;
+	z-index:103;
+}
+
+
+
+#col2 {
+	width:180px; height:600px;
+	background: white;
+	position:absolute;
+	right: 0; top: 30px;
+	z-index:88;	
+	display:none;
+}
+#col2 h2,p {
+	font-family: Verdana, Helvetica, Tahoma, sans-serif;
+}
+#col2 h2{
+	font-weight:bold;
+	font-size:1.2em;
+	margin-bottom:1em;
+}
+#col2 p{
+	font-size: 1em;
+	margin-bottom:.6em;
+}
+
+
+#col3 {
+	width:400px; height:400px;
+	background: white;
+	position:absolute;
+	left: 80px; top: 70px;
+	border: 1px dashed red;
+	z-index:77;
+	display:none;
+}
+#col4 {
+	width:120px; height:400px;
+	background: white;
+	position:absolute;
+	left: 20px; top: 100px;
+/*	border: 1px dashed #438;*/
+	z-index:66;
+	display:none;
+}
+#col4 ul{
+	list-style-image: url("../images/bluearrow.png");
+}
+#col4 li{
+	font-family: Verdana, Helvetica, Tahoma, sans-serif;
+	font-size: 1em; line-height: 1.2em;
+	cursor:pointer;
+}
+
+
+#col5 {
+	width:400px; height:400px;
+	background: white;
+	position:absolute;
+	right: 20px; top: 420px;
+	border: 1px dashed orange;
+	z-index:55;
+	display:none;
+	
+}

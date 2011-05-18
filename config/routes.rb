@@ -1,4 +1,14 @@
 Road03::Application.routes.draw do
+  resources :employees
+
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/whatWeDo"
+
+  get "pages/whoWeAre"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

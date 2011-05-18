@@ -1,0 +1,55 @@
+.admin {
+	margin:0 auto;
+	width:600px;
+	text-align: left;
+	left-margin: auto; right-margin: auto; 
+	clear: both;
+	background: #eee;
+	font-family: Verdana, Helvetica, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+.admin h1 {
+	font-weight: bold;
+	padding-top: 18px;
+	font-size: 18px;
+}
+.admin h3 {
+	font-weight: bold;
+	padding-top: 14px;
+}
+.admin p, a {
+	width: 400px; 
+	padding-top: 10px; 
+	font-size: 14px;
+}
+.emp_pic {
+	width:180px;
+	height:180px;
+	overflow:none;
+}
+.emp_name {
+	width:180px;
+	height:180px;	
+	display:none;
+	background: orange;
+    vertical-align: middle;
+	
+}
+
+.emp_name td{
+	height:180px;
+	width:180px;
+	font-family: 'Cabin Sketch', arial, serif;
+	font-size: 2em;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.emp_pic_image {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+

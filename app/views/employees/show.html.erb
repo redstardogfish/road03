@@ -1,0 +1,37 @@
+<div class = "admin">
+	<p id="notice"><%= notice %></p>
+
+	<h3>
+	  <%= @employee.name %>
+	</h3>
+
+	<p>
+	  <b>Intro:</b>
+	  <%= @employee.intro %>
+	</p>
+
+	<p>
+	  <b>Content:</b>
+	  <%= @employee.content %>
+	</p>
+
+	<p>
+	  <b>Contact:</b>
+	  <%= @employee.contact %>
+	</p>
+
+	<p>
+	  <b>Quote:</b>
+	  <%= @employee.quote %>
+	</p>
+	<% if @employee.smallPic.exists? then %>
+		<%= image_tag @employee.smallPic.url(:small) %>
+	<% end %>
+
+    <p>
+      	<%= link_to 'Edit', edit_employee_path(@employee) %> |
+		<%= link_to 'Back', employees_path %>
+		
+    </p>
+	
+</div>
