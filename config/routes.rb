@@ -8,6 +8,8 @@ Road03::Application.routes.draw do
   get "pages/whatWeDo"
 
   get "pages/whoWeAre"
+  
+  get "pages/home2"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,31 +1,29 @@
 <div class = "admin">
-	<p id="notice"><%= notice %></p>
-
+  <p id="notice"><%= notice %></p>
+  <div class = "show_employee">
 	<h3>
 	  <%= @employee.name %>
 	</h3>
 
-	<p>
-	  <b>Intro:</b>
+	<p class = "bold ital">
 	  <%= @employee.intro %>
 	</p>
+	
+	<%= simple_format( @employee.content) %>
 
-	<p>
-	  <b>Content:</b>
-	  <%= @employee.content %>
-	</p>
-
-	<p>
-	  <b>Contact:</b>
-	  <%= @employee.contact %>
-	</p>
-
-	<p>
-	  <b>Quote:</b>
-	  <%= @employee.quote %>
-	</p>
+    <% unless @employee.contact.empty? %>
+	  <p class = "ital">
+	    <span class = "bold">e:</span>
+	    <%= @employee.contact %>
+	  </p>
+	<% end %>
+    <% unless @employee.quote.empty? %>
+	  <p id = "employee_quote">
+	    "<%= @employee.quote %>"
+	  </p>
+	<% end %>
 	<% if @employee.smallPic.exists? then %>
-		<%= image_tag @employee.smallPic.url(:small) %>
+		<%= image_tag @employee.smallPic.url(:small), :class => "show_employee_pic" %>
 	<% end %>
 
     <p>
@@ -33,5 +31,5 @@
 		<%= link_to 'Back', employees_path %>
 		
     </p>
-	
+  </div>
 </div>

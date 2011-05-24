@@ -40,38 +40,54 @@ $(document).ready(function() {
 	
 	// this to toggle image and employee name
 	
-	$(".emp_pic").mouseenter(
-	function(){
-	  $(this).children(".emp_pic_image").hide();
-	  $(this).children().children(".emp_name").show();
-	}	
-	);
-	$(".emp_pic").mouseleave(
-	function(){
-	  $(this).children().children(".emp_name").hide();
-	  $(this).children(".emp_pic_image").show();
-	}	
-	);
 
 	
-	$(".emp_name").click(
-	function(){
-	  $(window.location).attr('href', (this).attr('id'));
-	}	
-	);
+	// $(".index_name").click(
+	// function(){
+	//   $(window.location).attr('href', (this).attr('id'));
+	// }	
+	// );
 	
 	$(".index_box").mouseenter(
 	function(){
-	  $(this).children(".index_pic").hide('slow');
+	  $(this).children(".index_pic").hide();
 	  $(this).children(".index_name").show();	
 	}
 	);
 	$(".index_box").mouseleave(
 	function(){
-	  $(this).children(".index_name").hide(0);
-	  $(this).children(".index_pic").show(0);	
+	  $(this).children(".index_name").hide();
+	  $(this).children(".index_pic").show();	
 	}
 	);
 	
+	
+	// this for home2 domains
+	// breaks the rules of elegance, but I think it is the easiest to read!
+	
+	$("#headline").mouseenter(
+	function(){
+		$("#lead").fadeIn(100, function(){
+		  $("#strat").fadeIn(400, function(){
+		    $("#innov").fadeIn(90, function(){
+		      $("#engage").fadeIn(180, function(){
+			    $("#clarify").fadeIn(100, function(){
+				  $("#learn").fadeIn(50);
+			    });
+		      });
+		    });
+		  });
+		});
+	}
+	);
+
+    $(".domain").hover(
+	function(){
+	  var target_id = ("#"+ $(this).attr("id") + "_text");
+	  $(target_id).toggle();
+		
+	}
+	);
+
 
 });

@@ -4,33 +4,9 @@
 	
 
 
-	<% @employees.each do |employee| %>
-	  <% if employee.smallPic.exists? then %>
+
 	
-	    <div class = "emp_pic">
-
-		  <div class = "emp_pic_image">
-		  	<%= image_tag employee.smallPic.url(:small), :width => "180px"%>
-		  </div>
-		  <% link_to employee do %>
-		    <div class = "emp_name">
-			  <table>
-			  	<tr>
-				  <td><%= employee.name %></td>
-				</tr>
-			  </table>		  	
-		    </div>
-          <% end %>
-			
-
-		  <!-- <%= link_to 'Edit', edit_employee_path(employee) %>
-	      <%= button_to "Delete", employee_path(employee.id), :method=>:delete, :class=>:destroy,:confirm=>"Are you sure?" %> -->
-	   </div>
-
-	  <% end %>	
-	<% end %>
-	
-	<p>
+	<p class = "para_with_headroom">
 		<%= link_to 'New Employee', new_employee_path %>
 		
 	</p>

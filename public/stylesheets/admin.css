@@ -13,6 +13,7 @@
 	font-weight: bold;
 	padding-top: 18px;
 	font-size: 18px;
+	text-align:left;
 }
 .admin h3 {
 	font-weight: bold;
@@ -23,40 +24,20 @@
 	padding-top: 10px; 
 	font-size: 14px;
 }
-.emp_pic {
-	width:180px;
-	height:180px;
-	overflow:none;
-}
-.emp_name {
-	width:180px;
-	height:180px;	
-	display:none;
-	background: orange;
-    vertical-align: middle;
-	
-}
 
-.emp_name td{
-	height:180px;
-	width:180px;
-	font-family: 'Cabin Sketch', arial, serif;
-	font-size: 2em;
-	text-align: center;
-	vertical-align:middle;
+.admin a {color: #2343a3;}
+
+.admin .para_with_headroom {
+	margin-top: 30px;
 }
 
 
-#emp_index td{
-	width:180px;
-	height:180px;
-	position:relative;
-}
 
 .index_box{
 	width:180px;
 	height:180px;
-
+    float:left;
+	padding:0 8px 8px 0;
 	
 }
 .index_pic{
@@ -64,32 +45,62 @@
 	height:180px;
 }
 .index_name{
-	width:90px;
-	height: 90px;
+	width: 180px;
+	height:180px;
 	display: none;
-	top:0;
 	background:orange;
+	cursor:pointer;
 }
-
-
-
-
-
-
-.emp_name td{
-	max-height:180px;
+.index_name p{
 	width:180px;
 	font-family: 'Cabin Sketch', arial, serif;
 	font-size: 2em;
 	text-align: center;
-	vertical-align:middle;
+	padding-top: 40px;
+}
+
+.index_row {
+	clear:both;
 }
 
 
-.emp_pic_image {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
+/*show*/
+
+.show_employee {
+	padding-left: 10px;
+}
+.show_employee h3{
+	font-family: 'Cabin Sketch', arial, serif;
+	font-size: 2em;	
+}
+
+.show_employee p {
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 10px;
+}
+
+.show_employee_pic {
+	margin-top: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+.ital {
+	font-style:italic;
+}
+
+#employee_quote {
+	font-size: 18px ;
+	font-style: italic; 
+}
+
+.field {
+	font-family: Courier, arial, serif;
+	text-align:left;
+	padding: 10px 0 0 10px;
+	
 }
 
 

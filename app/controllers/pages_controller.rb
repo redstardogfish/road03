@@ -11,4 +11,7 @@ class PagesController < ApplicationController
   def whoWeAre
   end
 
+  def home2
+    
+  end
 end
