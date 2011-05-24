@@ -1,0 +1,21 @@
+<table id = "emp_index">
+	<% this_array = random_employees_array %>
+	<% (0..@table_rows-1).each do |row| %>
+	  <tr>
+	    <% (0..2).each do |cell| %>
+		  <% employee = this_array[row*3+cell] %>
+		  <% if employee and employee != "empty" %>
+		    <td class = "index_box">
+
+			  <table class= 'index_name'>
+			  	<tr><td><%= image_tag employee.smallPic.url(:small), :width => "180px" %></td></tr>
+			  </table>
+			  <div class = "index_pic"><%= employee.name %></div>
+			</td>
+		  <% else %>
+			<td><%= image_tag "spacer.gif", :size => "180x180" %></td>
+		  <% end %>
+	    <% end %>	
+	  </tr>
+	<% end %>
+</table>

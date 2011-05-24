@@ -46,10 +46,51 @@
 	vertical-align:middle;
 }
 
+
+#emp_index td{
+	width:180px;
+	height:180px;
+	position:relative;
+}
+
+.index_box{
+	width:180px;
+	height:180px;
+
+	
+}
+.index_pic{
+	width: 180px;
+	height:180px;
+}
+.index_name{
+	width:90px;
+	height: 90px;
+	display: none;
+	top:0;
+	background:orange;
+}
+
+
+
+
+
+
+.emp_name td{
+	max-height:180px;
+	width:180px;
+	font-family: 'Cabin Sketch', arial, serif;
+	font-size: 2em;
+	text-align: center;
+	vertical-align:middle;
+}
+
+
 .emp_pic_image {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-
 }
+
+
 

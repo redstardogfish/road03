@@ -3,6 +3,8 @@ class EmployeesController < ApplicationController
   # GET /employees.xml
   def index
     @employees = Employee.all
+    @table_rows = (@employees.count * 0.75).to_i
+
 
     respond_to do |format|
       format.html # index.html.erb

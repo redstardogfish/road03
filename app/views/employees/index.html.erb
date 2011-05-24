@@ -1,5 +1,9 @@
 <div class="admin">
 
+  <%= render "employee_index_display" %>
+	
+
+
 	<% @employees.each do |employee| %>
 	  <% if employee.smallPic.exists? then %>
 	

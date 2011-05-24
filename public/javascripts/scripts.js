@@ -52,11 +52,25 @@ $(document).ready(function() {
 	  $(this).children(".emp_pic_image").show();
 	}	
 	);
+
 	
 	$(".emp_name").click(
 	function(){
 	  $(window.location).attr('href', (this).attr('id'));
 	}	
+	);
+	
+	$(".index_box").mouseenter(
+	function(){
+	  $(this).children(".index_pic").hide('slow');
+	  $(this).children(".index_name").show();	
+	}
+	);
+	$(".index_box").mouseleave(
+	function(){
+	  $(this).children(".index_name").hide(0);
+	  $(this).children(".index_pic").show(0);	
+	}
 	);
 	
 
